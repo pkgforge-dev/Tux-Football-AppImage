@@ -11,6 +11,11 @@ makedepends=('automake' 'autoconf')
 source=("https://master.dl.sourceforge.net/project/tuxfootball/0.3/tuxfootball-$pkgver.tar.gz?viasf=1")
 sha256sums=('44056c15572c2a3f0e3794719961915af15fef5f05596d2ef3f9e247f8a1f3e5')
 
+prepare() {
+  cd "$srcdir/$pkgname-$pkgver"
+  autoreconf -vfi
+}
+
 build() {
   cd "$srcdir/$pkgname-$pkgver"
   ./configure --prefix=/usr
