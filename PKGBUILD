@@ -13,7 +13,8 @@ sha256sums=('44056c15572c2a3f0e3794719961915af15fef5f05596d2ef3f9e247f8a1f3e5')
 
 prepare() {
   cd "$srcdir/$pkgname-$pkgver"
-  autoreconf -vfi
+  cp /usr/share/automake-*/config.guess .
+  cp /usr/share/automake-*/config.sub .
 }
 
 build() {
