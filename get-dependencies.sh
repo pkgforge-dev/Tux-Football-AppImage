@@ -6,7 +6,6 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-make-aur-package sdl
 make-aur-package
 
 echo "Installing debloated packages..."
