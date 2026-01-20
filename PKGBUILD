@@ -13,14 +13,11 @@ sha256sums=('44056c15572c2a3f0e3794719961915af15fef5f05596d2ef3f9e247f8a1f3e5')
 
 build() {
   cd "$srcdir/$pkgname-$pkgver"
-  
-  mkdir -p build && cd build
-  cmake .. \
-    -DCMAKE_INSTALL_PREFIX=/usr
+  ./configure --prefix=/usr
   make
 }
 
 package() {
-  cd "$srcdir/$pkgname-$pkgver/build"
+  cd "$srcdir/$pkgname-$pkgver"
   make DESTDIR="$pkgdir/" install
 }
