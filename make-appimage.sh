@@ -14,7 +14,8 @@ export DEPLOY_OPENGL=1
 
 # Deploy dependencies
 quick-sharun /usr/bin/tuxfootball \
-             /usr/lib/libvorbis*
+             /usr/lib/libvorbis* \
+             /usr/lib/libmikmod*
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
