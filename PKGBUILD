@@ -13,6 +13,8 @@ sha256sums=('44056c15572c2a3f0e3794719961915af15fef5f05596d2ef3f9e247f8a1f3e5')
 
 build() {
   cd "$srcdir/$pkgname-$pkgver"
+  # Set correct location for tux football data
+  export CPPFLAGS="$CPPFLAGS -DPACKAGE_DATA_DIR=\\\"/usr/share/tuxfootball/\\\""
   ./configure --prefix=/usr
   make
 }
