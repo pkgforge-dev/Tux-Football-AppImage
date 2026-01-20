@@ -17,7 +17,7 @@ export DEPLOY_OPENGL=1
 quick-sharun /usr/bin/tuxfootball \
              /usr/lib/libvorbis* \
              /usr/lib/libmikmod* \
-             /usr/lib/libdecor*
+             /usr/lib/libdecor/*/libdecor-cairo.so
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
