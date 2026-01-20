@@ -13,7 +13,8 @@ export DESKTOP=/usr/share/applications/tuxfootball.desktop
 export DEPLOY_OPENGL=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/tuxfootball
+quick-sharun /usr/bin/tuxfootball \
+             /usr/lib/libvorbis*
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
