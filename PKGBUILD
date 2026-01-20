@@ -12,11 +12,12 @@ source=("https://master.dl.sourceforge.net/project/tuxfootball/0.3/tuxfootball-$
 sha256sums=('44056c15572c2a3f0e3794719961915af15fef5f05596d2ef3f9e247f8a1f3e5')
 
 build() {
-  cmake -B build -S "$pkgname-$pkgver" \
-    -DCMAKE_INSTALL_PREFIX=/usr
-  cmake --build build
+  cd "$srcdir/$pkgname-$pkgver"
+  ./configure --prefix=/usr
+  make
 }
 
 package() {
-  DESTDIR="$pkgdir" cmake --install build
+  cd "$srcdir/$pkgname-$pkgver"
+  make DESTDIR="$pkgdir/" install
 }
