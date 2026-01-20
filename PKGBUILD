@@ -8,8 +8,8 @@ url="https://sourceforge.net/projects/tuxfootball/"
 license=('GPL2')
 depends=('sdl' 'sdl_image' 'sdl_mixer' 'libvorbis')
 makedepends=('cmake')
-source=("https://downloads.sourceforge.net/project/tuxfootball/tuxfootball-$pkgver.tar.gz")
-sha256sums=('444e27f474936d529b5379f8864389146f903a3556488d0859a8c6239f69796e')
+source=("https://master.dl.sourceforge.net/project/tuxfootball/0.3/tuxfootball-$pkgver.tar.gz?viasf=1")
+sha256sums=('44056c15572c2a3f0e3794719961915af15fef5f05596d2ef3f9e247f8a1f3e5')
 
 build() {
   cd "$srcdir/$pkgname-$pkgver"
