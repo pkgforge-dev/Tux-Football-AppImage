@@ -7,7 +7,7 @@ arch=('x86_64')
 url="https://sourceforge.net/projects/tuxfootball/"
 license=('GPL2')
 depends=('sdl' 'sdl_image' 'sdl_mixer' 'libvorbis' 'libmikmod')
-makedepends=('cmake')
+makedepends=('automake' 'autoconf')
 source=("https://master.dl.sourceforge.net/project/tuxfootball/0.3/tuxfootball-$pkgver.tar.gz?viasf=1")
 sha256sums=('44056c15572c2a3f0e3794719961915af15fef5f05596d2ef3f9e247f8a1f3e5')
 
