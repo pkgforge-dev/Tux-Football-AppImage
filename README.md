@@ -1,3 +1,5 @@
+<div align="center">
+
 # Tux Football AppImage 🐧
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/Tux-Football-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/Tux-Football-AppImage/releases/latest)
@@ -8,7 +10,11 @@
   <img src="https://github.com/user-attachments/assets/2c262cb9-2a5d-491c-9250-120557bdc52a" width="128" />
 </p>
 
-* [Upstream URL](https://tuxfootball.sourceforge.net/)
+| Latest Stable Release | Upstream URL |
+| :---: | :---: |
+| [Click here](https://github.com/pkgforge-dev/Tux-Football-AppImage/releases/latest) | [Click here](https://tuxfootball.sourceforge.net/) |
+
+</div>
 
 ---
 
